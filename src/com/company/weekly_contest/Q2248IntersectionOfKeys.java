@@ -1,4 +1,4 @@
-package leetcode.weekly_contest;
+package com.company.weekly_contest;
 
 import java.util.*;
 import java.util.stream.Collectors;

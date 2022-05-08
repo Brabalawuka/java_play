@@ -1,6 +1,5 @@
-package leetcode.weekly_contest;
+package com.company.weekly_contest;
 
-import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class Q6039MaxProAftKInc {

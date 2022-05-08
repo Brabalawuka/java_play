@@ -1,4 +1,4 @@
-package leetcode.weekly_contest;
+package com.company.weekly_contest;
 
 public class Q2259RemoveDigit {
     public String removeDigit(String number, char digit) {

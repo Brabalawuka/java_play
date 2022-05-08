@@ -1,4 +1,4 @@
-package leetcode.weekly_contest;
+package com.company.weekly_contest;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -65,6 +65,8 @@ public class Q2250CountRectangles {
         }
 
         return vals.size() - id;
+
+
     }
 
 }

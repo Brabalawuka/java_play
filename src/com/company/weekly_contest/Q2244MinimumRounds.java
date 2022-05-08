@@ -1,7 +1,6 @@
-package leetcode.weekly_contest;
+package com.company.weekly_contest;
 
 import java.util.HashMap;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Q2244MinimumRounds {
 

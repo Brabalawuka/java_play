@@ -1,6 +1,4 @@
-package leetcode.weekly_contest;
-
-import org.w3c.dom.NodeList;
+package com.company.weekly_contest;
 
 import java.util.*;
 

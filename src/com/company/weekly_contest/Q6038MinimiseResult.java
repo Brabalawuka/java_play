@@ -1,8 +1,7 @@
-package leetcode.weekly_contest;
+package com.company.weekly_contest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Q6038MinimiseResult {
