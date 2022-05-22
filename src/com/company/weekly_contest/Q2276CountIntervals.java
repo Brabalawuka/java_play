@@ -1,25 +1,46 @@
-package com.company;
+package com.company.weekly_contest;
 
-import com.company.weekly_contest.Q2246LongestPath;
-import com.company.weekly_contest.Q2267SetUnclosed;
-import com.company.weekly_contest.Q6058CountText;
-
-import java.sql.Timestamp;
 import java.util.*;
 
-public class Main {
+public class Q2276CountIntervals {
 
-    public static void main(String[] args) {
-        var list = new ArrayList<>(List.of(new Integer[]{1, 2, 3, 4, 5}));
+    public ArrayList<Integer> starts;
+    public ArrayList<Integer> ends;
+
+    public Q2276CountIntervals() {
+        starts = new ArrayList<Integer>();
+        ends = new ArrayList<>();
+    }
+
+    public void add(int left, int right) {
+        var leftposition = binarySearchSmaller(starts, left);
+        var righposition = binarySearchBigger(ends, right);
+        var curLeftStart = starts.get(leftposition);
+        var curLeftEnd = ends.get(leftposition);
+
+        var curRightStart = starts.get(righposition);
+        var curRightEnd = ends.get(righposition);
+
+        var isRightBigger = curRightStart > right + 1;
+        var isLeftSmaller = curLeftEnd < left - 1;
+
+        if (isLeftSmaller) {
+
+        }
 
 
-        var a = binarySearchBigger(list, 6);
-        list.set(a, 6);
-        System.out.println(Arrays.toString(list.stream().toArray()));
+
+
+
 
     }
 
+    public int count() {
+        return 1;
 
+
+
+    }
 
     static int binarySearchSmaller(List<Integer> arr, int x) {
         int left = 0, right = arr.size() - 1;
@@ -72,4 +93,6 @@ public class Main {
         // not present
         return ans;
     }
+
+
 }
