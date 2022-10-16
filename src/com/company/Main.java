@@ -1,8 +1,6 @@
 package com.company;
 
-import com.company.weekly_contest.Q2246LongestPath;
-import com.company.weekly_contest.Q2267SetUnclosed;
-import com.company.weekly_contest.Q6058CountText;
+import com.company.weekly_contest.*;
 
 import java.sql.Timestamp;
 import java.util.*;
@@ -10,12 +8,14 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        var list = new ArrayList<>(List.of(new Integer[]{1, 2, 3, 4, 5}));
+//        var list = new ArrayList<>(List.of(new Integer[]{1, 2, 3, 4, 5}));
+//
+//
+//        var a = binarySearchBigger(list, 6);
+//        list.set(a, 6);
+//        System.out.println(Arrays.toString(list.stream().toArray()));
+        Q2327PeopleAwareOfSecret.peopleAwareOfSecret(6,2,4);
 
-
-        var a = binarySearchBigger(list, 6);
-        list.set(a, 6);
-        System.out.println(Arrays.toString(list.stream().toArray()));
 
     }
 
