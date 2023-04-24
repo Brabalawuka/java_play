@@ -4,19 +4,26 @@ import java.util.HashMap;
 
 public class Q6205CountDistinctIntegers {
 
-    public int findMaxK(int[] nums) {
-        var max = -1;
-        var tempMap = new HashMap<Integer, Boolean>();
+    public int countDistinctIntegers(int[] nums) {
+
+        var uniqueResultMap = new HashMap<String, Boolean>();
+
         for (int num : nums) {
-            if (tempMap.containsKey(num*-1)) {
-                if (Math.abs(num) >= max) {
-                    max = Math.abs(num);
-                }
-            } else {
-                tempMap.put(num, true);
+
+            var numStr = String.valueOf(num);
+            uniqueResultMap.put(numStr, true);
+
+            var sb = new StringBuilder(numStr).reverse();
+            while (sb.length() > 0 && sb.charAt(0) == '0') {
+                sb.deleteCharAt(0);
             }
+
+            var revStr = sb.toString();
+            uniqueResultMap.put(revStr, true);
+
         }
-        return max;
+
+        return uniqueResultMap.size();
 
     }
 }
